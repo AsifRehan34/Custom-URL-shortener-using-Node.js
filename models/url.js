@@ -1,4 +1,3 @@
-import express from 'express';
 import mongoose from 'mongoose';
 
 const urlSchema = new mongoose.Schema(
@@ -14,9 +13,9 @@ const urlSchema = new mongoose.Schema(
         },
         visitHistory: [{
             timestamp: {
-                type: Number,
+                type: Number
             }
-        }]
+        }],
     },
     {
         timestamps: true,
